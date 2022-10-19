@@ -1,5 +1,4 @@
-import { Express } from 'express';
-
+import express from "express";
 // import costumer controllers
 
 import {
@@ -10,12 +9,12 @@ import {
   deleteCostumer
 } from '../controllers/costumers.js';
 
-const Router = Express.Router();
+const Router = express.Router();
 
-router.get('/costumer', getCostumer);
-router.get('/costumer/:id', getCostumerById);
-router.post('/costumer', createCostumer);
-router.put('/costumer/:id', updateCostumer);
-router.delete('/costumer/:id', deleteCostumer);
+Router.get('/costumer', getCostumer);
+Router.get('/costumer/:id', getCostumerById);
+Router.post('/costumer', createCostumer);
+Router.put('/costumer/:id', updateCostumer);
+Router.delete('/costumer/:id', deleteCostumer);
 
 export default Router;

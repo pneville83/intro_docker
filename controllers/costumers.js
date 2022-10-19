@@ -1,4 +1,4 @@
-import Costumer from "../models/costumer";
+import Costumer from "../models/costumer.js";
 
 
 // GET que me traiga todos los clientes 
