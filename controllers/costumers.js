@@ -1,12 +1,12 @@
-import Costumer from "../models/costumer.js";
+import costumer from "../models/costumer.js";
 
 
 // GET que me traiga todos los clientes 
 
 export const getCostumer = async (req, res) => {
   try {
-    const costumer = await Costumer.findAll();
-    res.send(school);
+    const Costumer = await costumer.findAll();
+    res.send(Costumer);
   } catch (err) {
     console.log(err);
   }
@@ -16,13 +16,13 @@ export const getCostumer = async (req, res) => {
 
 export const getCostumerById = async (req, res) => {
   try {
-    const costumer = await Costumer.findByPk(req.params.id);
-    if (!costumer) {
+    const Costumer = await costumer.findByPk(req.params.id);
+    if (!Costumer) {
       res.status(404).send({
         message: `No Costumer found with id ${req.params.id}`
       })
     }
-    res.send(costumer);
+    res.send(Costumer);
   } catch (err) {
     console.log (err);
   }
@@ -32,7 +32,7 @@ export const getCostumerById = async (req, res) => {
 
 export const createCostumer = async (req, res) => {
   try {
-    await Costumer.create(req.body);
+    await costumer.create(req.body);
     res.json ({
       "message": "Costumer Created",
     });
@@ -45,14 +45,14 @@ export const createCostumer = async (req, res) => {
 
 export const updateCostumer = async (req, res) => {
   try {
-    const costumer = await Costumer.findByPk(req.params.id);
-    if (!costumer) {
+    const Costumer = await costumer.findByPk(req.params.id);
+    if (!Costumer) {
       res.status(404).send({
         message: `No Costumer found with id ${req.params.id}`
       });
       return;
     }
-    await Costumer.update(req.body, {
+    await costumers.update(req.body, {
       where: {
         id: req.params.id
       }
@@ -69,14 +69,14 @@ export const updateCostumer = async (req, res) => {
 
 export const deleteCostumer = async (req, res) => {
   try {
-    const costumer = await Costumer.findByPk(req.params.id);
-    if (!costumer){
+    const Costumer = await costumer.findByPk(req.params.id);
+    if (!Costumer){
       res.status(400).send({
         message: `No Costumer found with id ${req.params.is}`
       });
       return;
     }
-    await Costumer.destroy({
+    await costumer.destroy({
       where: {
         id: req.params.id
       }
