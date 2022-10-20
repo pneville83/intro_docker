@@ -13,7 +13,7 @@ debemos importarlo de la siguiente manera import express from 'express'; con eso
 ![package](https://user-images.githubusercontent.com/97038060/196572649-184a720f-c556-4981-a3a4-dd0ee5f577df.png)
 
 
-La solucion para este error fue nombrar la tabla en plurar de costumer a costumers
+La solucion para este error fue nombrar la tabla en plural de costumer a costumers
 
 ![image](https://user-images.githubusercontent.com/97038060/197015080-360fe220-6ccf-43c5-8343-5bdbb32c5a8c.png)
 
