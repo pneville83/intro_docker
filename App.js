@@ -1,8 +1,10 @@
 import express from 'express';
-
+import AuthRouter from './routes/auth.js'
 import db from './config/database.js';
 import Router from './routes/routes.js';
 import cors from 'cors'
+
+
 
 const app = express ();
 app.use(express.json());
@@ -19,5 +21,6 @@ try {
 }
 
 app.use(Router);
+app.use(AuthRouter);
 
 app.listen(3001, () => console.log('Servidor corriendo en localhost 3001....'))

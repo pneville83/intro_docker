@@ -1,42 +1,37 @@
 import { Sequelize } from "sequelize";
-import db from '../config/database.js'
-
+import db from "../config/database.js";
 
 const { DataTypes } = Sequelize;
-const Costumer = db.define ('costumer',{
 
+const User = db.define ('users', {
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
-    primaryKey: true
+    primaryKey: true,
   },
 
-  firstName: {
+  userName: {
     type: DataTypes.STRING,
-    field: 'first_name'
+    field: 'user_name',
   },
 
-  lastName: {
-    type: DataTypes.STRING,
-    field: 'last_name'
-  },
-
-  mobile: {
+  email: {
     type: DataTypes.STRING
   },
 
-  model: {
+  password: {
     type: DataTypes.STRING
   },
 
   createdOn: {
     type: DataTypes.DATE,
+    defaultValue: Sequelize.NOW,
     field: 'created_on',
-    defaultValue: Sequelize.NOW
   }
 },
 {timestamps: false},
 {
-   tableName: 'costumer'
+tableName: 'users'
 });
-export default Costumer;
+
+export default User;

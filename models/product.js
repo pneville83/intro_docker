@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 import db from '../config/database.js';
-import costumer from './costumer.js'
+import Costumer from './costumer.js'
 
 const { DataTypes } = Sequelize;
 
@@ -32,7 +32,7 @@ const Product = db.define ('product', {
     type: DataTypes.STRING,
     field: 'product_model',
     references: {
-      model: costumer,
+      model: Costumer,
       key: 'model'
     }
   },
