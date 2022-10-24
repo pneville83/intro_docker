@@ -32,6 +32,17 @@ la creacion de la nueva tabla con los encabezados solicitados en la migracion
 
 ![image](https://user-images.githubusercontent.com/97038060/197436302-e2b5d902-e3e0-4316-ab7a-d046465c533d.png)
 
+# Creamos un update a nuestra tabla sumamos la columna cost
+
+npx sequelize-cli db:migrate:undo:all --to 20221024192134-Update_Courses_adding_cost.js
+
+![image](https://user-images.githubusercontent.com/97038060/197610269-06c3371a-46cd-4f8b-bbcb-ec9ecef5096c.png)
+
+
+![image](https://user-images.githubusercontent.com/97038060/197610320-66fc3ff7-a8a5-4032-a54d-032b3dc394d3.png)
+
+
+
 
 
 
