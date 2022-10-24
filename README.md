@@ -14,6 +14,10 @@ Creamos el primer modelo a migar mediante el siguiente comando
 npx sequelize-cli model:generate --name Courses --attributes name:string,teacherName:string,durationHours:numbers
 
 este genera al archivo para crear una nueva tabla y ejecutamos con el siguiente comando 
+Recordar crear el archivo package.json dentro de migrations con la siguiente info para que pueda correr la migración
+
+
+![image](https://user-images.githubusercontent.com/97038060/197436823-c2dde7fb-c275-48ad-b6d0-523181dd6658.png)
 
 npx sequelize-cli db:migrate
 
