@@ -7,7 +7,7 @@ se modifica el archivo package.json que se crea en config para poder acceder
 
 ![image](https://user-images.githubusercontent.com/97038060/197435827-8b6a4808-194b-4338-9dba-ea68dc253615.png)
 
-# NOTA: aqui no se como usar ENV para evitar colocar los datos sesibles de acceso a la base de datos 
+# NOTA: aqui no se como usar ENV para evitar colocar los datos sensibles de acceso a la base de datos 
 
 Creamos el primer modelo a migar mediante el siguiente comando 
 
