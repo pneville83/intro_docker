@@ -41,6 +41,24 @@ se realizan cambios en el test  pero no reconoce el titulo name dentro de la tab
 
 ![image](https://user-images.githubusercontent.com/97038060/197959124-5285055e-b3c6-4a1f-948a-0b5b921d87d9.png)
 
+# corriendo test con corrección en el codigo
+
+![image](https://user-images.githubusercontent.com/97038060/198155453-15eff19b-5518-4179-ad28-ef5a7a1fe56d.png)
+
+
+se aplica CI a nuestro repositorio 
+
+arroja un error el ci.yml
+
+![image](https://user-images.githubusercontent.com/97038060/198155543-e8b98c85-296c-4493-aaea-194847e239f0.png)
+
+
+![image](https://user-images.githubusercontent.com/97038060/198155630-27bd4735-0193-4e85-9500-4e48564f93f5.png)
+
+
+
+
+
 
 
 
