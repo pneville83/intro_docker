@@ -34,6 +34,16 @@ aqui mos arroja falla en el test no imprime el nombre al momento de correrlo
 ![image](https://user-images.githubusercontent.com/97038060/197907611-44fc27f1-3555-4074-83b2-2de78592778d.png)
 
 
+se realizan cambios en el test  pero no reconoce el titulo name dentro de la tabla aunque lo imprime el test da failling 
+
+  ![image](https://user-images.githubusercontent.com/97038060/197958961-24438fe2-7f6c-4f14-ad96-d9befd3af091.png)
+
+
+![image](https://user-images.githubusercontent.com/97038060/197959124-5285055e-b3c6-4a1f-948a-0b5b921d87d9.png)
+
+
+
+
 
 
 
