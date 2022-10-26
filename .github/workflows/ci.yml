@@ -5,20 +5,38 @@ on:
   pull_request:
     branches: [ main ]
 
-jobs: 
+env:
+  POSTGRES_HOST: localhost
+  POSTGRES_PORT: 5432
+
+jobs:
   test:
     runs-on: ubuntu-latest
-      service:
-        postgres:
-          image: postgres
-          env:
-            POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: johnpeter83
-            POSTGRES_DB: pruebas_peter
-          options: >-
-            --health-cmd pg_isready
-            --health-interval 10s
-            --health-timeout 5s
-            --health-retries 5
-          ports:
-              - 5432:5432
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: johnpeter83
+          POSTGRES_DB: pruebas_peter
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+            - 5432:5432
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "16.16"
+
+      - name: Installing Dependencies
+        run: npm i
+
+      - name: testing our app
+        run: npm test
