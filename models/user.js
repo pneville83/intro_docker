@@ -12,9 +12,8 @@ const User = db.define ('users', {
     primaryKey: true,
   },
 
-  userName: {
+  name: {
     type: DataTypes.STRING,
-    field: 'user_name',
   },
 
   email: {
@@ -25,10 +24,14 @@ const User = db.define ('users', {
     type: DataTypes.STRING
   },
 
-  createdOn: {
+  createdAt: {
     type: DataTypes.DATE,
     defaultValue: Sequelize.NOW,
-    field: 'created_on',
+  },
+
+  updatedAt: {
+    type: DataTypes.DATE,
+    defaultValue: Sequelize.NOW,
   }
 },
 {timestamps: false},

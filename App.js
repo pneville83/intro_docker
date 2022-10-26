@@ -24,3 +24,5 @@ app.use(Router);
 app.use(AuthRouter);
 
 app.listen(3001, () => console.log('Servidor corriendo en localhost 3001....'))
+
+export default app;

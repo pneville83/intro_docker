@@ -1,11 +1,11 @@
 import jwt from 'jsonwebtoken'
-import User from "../models/user.js";
+import User from '../models/user.js';
 import bcrypt from 'bcrypt';
 
 export const register = async (req, res) => {
   try {
     const user = await User.create({
-      userName: req.body.userName,
+      name: req.body.userName,
       email: req.body.email,
       password: bcrypt.hashSync(req.body.password, 8)
     });
@@ -45,7 +45,7 @@ export const login = async (req, res) => {
 
     const token = jwt.sign({
       id: user.id,
-      name: user.userName,
+      name: user.name,
     }, 'secret-key', {
       expiresIn: 86400
     });
@@ -55,7 +55,7 @@ export const login = async (req, res) => {
       user: {
         id: user.id,
         email: user.email,
-        name: user.userName,
+        name: user.name,
       },
       message: "Login Successfull",
       accessToken: token,
