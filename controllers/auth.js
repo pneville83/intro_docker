@@ -5,7 +5,7 @@ import bcrypt from 'bcrypt';
 export const register = async (req, res) => {
   try {
     const user = await User.create({
-      name: req.body.userName,
+      name: req.body.name,
       email: req.body.email,
       password: bcrypt.hashSync(req.body.password, 8)
     });
