@@ -10,7 +10,7 @@ describe ('Test auth endpoints', ()=> {
     const payload = {
       'name': 'Peter',
       'email': 'pruebas1234@gmail.com',
-      'password': 'peter2022'
+      'password': 'peternev'
     }
     const { body, status } = await request(app).post('/auth/register').send(payload);
     expect(status).to.equal(201);
