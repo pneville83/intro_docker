@@ -1,24 +1,21 @@
 import { Sequelize } from "sequelize";
+import * as dotenv from 'dotenv';
+dotenv.config();
 
-import _config from "../config/config.js";
 
-const env = process.env.ENV;
-const config = _config[env];
 
-// create connection
-const db = new Sequelize(
-  config.database,
-  config.username,
-  config.password,
-  {
-    host: config.host,
+const db = new Sequelize (
+  process.env.DB_NAME,
+  process.env.DB_USER,
+  process.env.DB_PASSWORD, {
+    host: process.env.DB_HOST,
     dialect: 'postgres',
-    logging: config.logging,
+    logging: false,
+    port: 5432,
     define: {
-      timestamps: false
+      timestamp: false
     }
-  },
-  
+  }
 );
 
 export default db;
