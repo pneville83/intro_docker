@@ -3,13 +3,13 @@ import { Sequelize } from "sequelize";
 import _config from "../config/config.js";
 
 const env = process.env.ENV;
-const config = _config;
+const config = _config [env];
 
 // create connection
 const db = new Sequelize(
-  config.database || 'pruebas_peter', 
-  config.username || 'postgres',
-  config.password ||'johnpeter83',
+  config.database, 
+  config.username,
+  config.password,
   {
     host: config.host,
     dialect: 'postgres',
