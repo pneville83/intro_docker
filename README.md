@@ -61,11 +61,11 @@ subimos nustro repo a la rama development para correr CI y al hacer merge a main
 
 configuramos render para hacer deploy de nuestro proyecto (seguir indicaciones bootcamp)
 
-deployment falla 
+# Deplyment con Render
 
-![image](https://user-images.githubusercontent.com/97038060/199360037-fac0a4ac-3859-4ddc-a183-8d3a1142c290.png)
 
-![image](https://user-images.githubusercontent.com/97038060/199360144-aee40078-7fdb-45ea-afdc-1a8cff9f8c0e.png)
+![image](https://user-images.githubusercontent.com/97038060/199362274-6a199601-ec23-48bb-9693-918335cac3a9.png)
+
 
 
 
