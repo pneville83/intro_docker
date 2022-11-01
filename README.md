@@ -48,13 +48,9 @@ se realizan cambios en el test  pero no reconoce el titulo name dentro de la tab
 
 se aplica CI a nuestro repositorio 
 
-arroja un error el ci.yml
+subimos nustro repo a la rama development para correr CI y al hacer merge a main que corra CD
 
-![image](https://user-images.githubusercontent.com/97038060/198155543-e8b98c85-296c-4493-aaea-194847e239f0.png)
-
-
-![image](https://user-images.githubusercontent.com/97038060/198155630-27bd4735-0193-4e85-9500-4e48564f93f5.png)
-
+![image](https://user-images.githubusercontent.com/97038060/199343454-b48e5bfa-4c7b-4fdd-8976-19ac8fec20c7.png)
 
 
 
