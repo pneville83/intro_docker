@@ -3,7 +3,7 @@ import db from '../config/database.js'
 
 
 const { DataTypes } = Sequelize;
-const Costumer = db.define ('costumer',{
+const Costumer = db.define ('costumers',{
 
   id: {
     type: DataTypes.INTEGER,
@@ -11,32 +11,34 @@ const Costumer = db.define ('costumer',{
     primaryKey: true
   },
 
-  firstName: {
+  name: {
     type: DataTypes.STRING,
-    field: 'first_name'
   },
 
   lastName: {
     type: DataTypes.STRING,
-    field: 'last_name'
   },
 
-  mobile: {
+  email: {
     type: DataTypes.STRING
   },
 
-  model: {
-    type: DataTypes.STRING
-  },
+  phone: {
+    type: Sequelize.STRING
+  },  
 
-  createdOn: {
+  createdAt: {
     type: DataTypes.DATE,
-    field: 'created_on',
     defaultValue: Sequelize.NOW
+  },
+
+  updatedAt: {
+    type: DataTypes.DATE,
+    defaultValue: Sequelize.NOW,
   }
 },
 {timestamps: false},
 {
-   tableName: 'costumer'
+tableName: 'costumers'
 });
 export default Costumer;

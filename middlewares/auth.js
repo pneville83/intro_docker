@@ -16,7 +16,7 @@ export const isUserAuthenticated = (req, res, next) => {
         payload = jwt.verify(token, 'secret-key')
         next()
       } catch (e) {
-        if (e instanceof jwt.JsonWenTokenError) {
+        if (e instanceof jwt.JsonWebTokenError) {
           return res.status(401).json ({
             status: 401,
             message: 'UNAUTHORIZED'
