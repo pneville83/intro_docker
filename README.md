@@ -46,14 +46,14 @@ se realizan cambios en el test  pero no reconoce el titulo name dentro de la tab
 ![image](https://user-images.githubusercontent.com/97038060/198155453-15eff19b-5518-4179-ad28-ef5a7a1fe56d.png)
 
 
-se aplica CI a nuestro repositorio 
+se crear una nueva branch (development) para que realice nuestro proceso CI y poder subir a main
 
-arroja un error el ci.yml
-
-![image](https://user-images.githubusercontent.com/97038060/198155543-e8b98c85-296c-4493-aaea-194847e239f0.png)
+![image](https://user-images.githubusercontent.com/97038060/199342611-f7e7ac1d-244e-4e33-ba10-4e8fd9708658.png)
 
 
-![image](https://user-images.githubusercontent.com/97038060/198155630-27bd4735-0193-4e85-9500-4e48564f93f5.png)
+proceso terminado
+
+
 
 
 
