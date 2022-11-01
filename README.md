@@ -53,6 +53,14 @@ subimos nustro repo a la rama development para correr CI y al hacer merge a main
 ![image](https://user-images.githubusercontent.com/97038060/199343454-b48e5bfa-4c7b-4fdd-8976-19ac8fec20c7.png)
 
 
+configuramos render para hacer deploy de nuestro proyecto (seguir indicaciones bootcamp)
+
+deployment falla 
+
+![image](https://user-images.githubusercontent.com/97038060/199360037-fac0a4ac-3859-4ddc-a183-8d3a1142c290.png)
+
+
+
 
 
 
