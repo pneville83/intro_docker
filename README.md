@@ -46,7 +46,13 @@ se realizan cambios en el test  pero no reconoce el titulo name dentro de la tab
 ![image](https://user-images.githubusercontent.com/97038060/198155453-15eff19b-5518-4179-ad28-ef5a7a1fe56d.png)
 
 
-se aplica CI a nuestro repositorio 
+se crear una nueva branch (development) para que realice nuestro proceso CI y poder subir a main
+
+![image](https://user-images.githubusercontent.com/97038060/199342611-f7e7ac1d-244e-4e33-ba10-4e8fd9708658.png)
+
+
+proceso terminado
+
 
 subimos nustro repo a la rama development para correr CI y al hacer merge a main que corra CD
 
