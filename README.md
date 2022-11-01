@@ -61,7 +61,7 @@ subimos nustro repo a la rama development para correr CI y al hacer merge a main
 
 configuramos render para hacer deploy de nuestro proyecto (seguir indicaciones bootcamp)
 
-# Deplyment con Render
+# Deployment con Render
 
 
 ![image](https://user-images.githubusercontent.com/97038060/199362274-6a199601-ec23-48bb-9693-918335cac3a9.png)
