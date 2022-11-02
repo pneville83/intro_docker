@@ -67,6 +67,34 @@ configuramos render para hacer deploy de nuestro proyecto (seguir indicaciones b
 ![image](https://user-images.githubusercontent.com/97038060/199362274-6a199601-ec23-48bb-9693-918335cac3a9.png)
 
 
+# Prueba con post para crear usuraio con en la base de render 
+
+![image](https://user-images.githubusercontent.com/97038060/199410285-54c438e4-711f-4f81-a09a-a0c28ffc5534.png)
+
+Creamos un costumer nuevo 
+
+![image](https://user-images.githubusercontent.com/97038060/199410333-4a1679de-4f40-4024-ad9b-37106cc85c83.png)
+
+# conectamos nuestra bse de Render con DBeaver
+
+![image](https://user-images.githubusercontent.com/97038060/199410933-c64b3952-3659-4640-932d-85a596bd999e.png)
+
+creamos una nueva conexion y escogemos from JDBC url
+luego en render copiamos la url externa de la base datos 
+
+![image](https://user-images.githubusercontent.com/97038060/199411239-696778b3-d332-4b45-8d6e-30a0dc2beb44.png)
+
+![image](https://user-images.githubusercontent.com/97038060/199411440-cbb89fb8-7ac6-4daa-9d81-b83e93f96b84.png)
+
+damos en continuar y ya tenemos nuestra base conectada a DBeaver
+
+
+![image](https://user-images.githubusercontent.com/97038060/199411573-8d892532-59c0-4005-9577-a80b558d76b9.png)
+
+
+
+
+
 
 
 
