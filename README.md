@@ -91,6 +91,29 @@ damos en continuar y ya tenemos nuestra base conectada a DBeaver
 
 ![image](https://user-images.githubusercontent.com/97038060/199411573-8d892532-59c0-4005-9577-a80b558d76b9.png)
 
+# Se crea primera imagen con Docker 
+
+Como empezar con Dcoker 
+
+1.- Creamos nuestro archivo Dockerfile (dentro del proyecto que queremos crear la imagen)
+
+2.- Creamos nuestro archivo .dockerignore (aqui debemos poner todo lo que no requerimos para crear la imagen que esta
+dentro de nuestro proyecto)
+
+3.- construimos nuestra imagen con el comando docker build -t peternev/express_js:1.0 . (express_js sera el nombre de nuestra imagen el punto indica que
+buscara dentro de la misma ubicación un archivo Dockerfile si  esta en otra ruta la debemos especificar luego del punto)
+
+4.- luego podemos revisar lo creado con el comando docker images
+
+5.- debemos configurar la ip para poder correr nuestro localhost eso lo logramos obteniendo nuestra ip (podemos ver en 
+google cual es nuestra ip), esa ip la debemo incorporar en las variables de enterno (nuestro archivo .env) en nuestro 
+caso 181.199.40.16
+
+6.- procedemos correr nuestra imagen con el siguiente comando "docker run --env-file=.env -it -p 4000:8080 express_js" 
+(-p nos permite acoplar el host en que queremos que corra en este caso seria 4000 e indicar en el host donde 
+proviene que es 8080 de acuerdo a nuestro archivo dockerfile.
+
+
 
 
 
