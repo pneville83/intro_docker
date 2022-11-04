@@ -1,6 +1,6 @@
 # Use official lightwieht Node
 # https://hub.docker.com/_/node
-FROM node:fermium-slim
+FROM node:18.12.0-slim 
 
 # Create and change to the app directory
 WORKDIR /usr/src/app
