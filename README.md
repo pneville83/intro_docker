@@ -113,6 +113,22 @@ caso 181.199.40.16
 (-p nos permite acoplar el host en que queremos que corra en este caso seria 4000 e indicar en el host donde 
 proviene que es 8080 de acuerdo a nuestro archivo dockerfile.
 
+![image](https://user-images.githubusercontent.com/97038060/199912903-1a71e01b-f01c-4866-b883-971c07137e60.png)
+
+![image](https://user-images.githubusercontent.com/97038060/199913866-c1594863-0b37-4297-8c8b-370fee21e176.png)
+
+
+
+corremos nuestra imagen de docker para probar con postman al localhost 4000
+
+![image](https://user-images.githubusercontent.com/97038060/199913152-7711b9aa-8314-4a5f-94e1-3cc2bf19e074.png)
+
+![image](https://user-images.githubusercontent.com/97038060/199913947-80ed1471-ef02-4dd3-a07e-3185b7fd389e.png)
+
+
+
+
+
 
 
 
